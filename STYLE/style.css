@@ -76,7 +76,7 @@ header nav {
     text-align: center;
 }*/
 
-nav.navbar.navbar-expand-lg.bg-body-tertiary{
+nav.navbar.navbar-expand-lg{
         width: 100vw;
     color: white;
     font-family: "Borel", cursive;
