@@ -291,6 +291,15 @@ footer ul {
         justify-content: center;
         align-items: center;
     }
+
+    .img1{
+    height: 35vh;
+        padding: 10px;
+}
+.img2{
+    height: 35vh;
+    padding: 10px;
+}
     
     /*CONTACTO*/
 
