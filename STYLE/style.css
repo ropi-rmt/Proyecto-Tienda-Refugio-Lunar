@@ -254,13 +254,6 @@ footer ul {
         width: 50vw;
     }
 
-    /*NOSOTROS*/
-    .nosotros{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
     
     /*CONTACTO*/
 
