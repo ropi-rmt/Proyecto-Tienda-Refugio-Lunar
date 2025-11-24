@@ -8,7 +8,6 @@
 }
 
 /*archivo principal de SASS*/
-/*aca va a ir el codigo css y sass del header y su repsonsive*/
 header .borel-regular {
   font-family: "Borel", cursive;
   font-weight: 400;
@@ -64,6 +63,45 @@ header nav :hover {
   color: rgb(155, 98, 209);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  /*PRODUCTOS*/
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 50vw;
+  }
+  .imgprod {
+    width: 50vw;
+  }
+  /*NOSOTROS*/
+  .nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img1 {
+    width: 80vw;
+    padding: 10px;
+  }
+  .img2 {
+    height: 35vh;
+    padding: 10px;
+  }
+  /*CONTACTO*/
+  .contacto {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+  }
+  .ifihad {
+    width: 75vw;
+  }
+}
 /*archivo principal de SASS*/
 #videobienvenida {
   display: flex;
@@ -235,45 +273,6 @@ footer .rs {
   width: 5vw;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-  /*PRODUCTOS*/
-  .galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .producto {
-    width: 50vw;
-  }
-  .imgprod {
-    width: 50vw;
-  }
-  /*NOSOTROS*/
-  .nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .img1 {
-    width: 80vw;
-    padding: 10px;
-  }
-  .img2 {
-    height: 35vh;
-    padding: 10px;
-  }
-  /*CONTACTO*/
-  .contacto {
-    display: flex;
-    flex-flow: column;
-    row-gap: 10px;
-  }
-  .ifihad {
-    width: 75vw;
-  }
-}
 /*luego ejecutar en terminal sass --watch sass/style.scss style/style.css estoy es 1h 29'*/
 
 /*# sourceMappingURL=style.css.map */

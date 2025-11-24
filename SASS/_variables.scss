@@ -22,4 +22,9 @@ $colorRefugio: rgb(155, 98, 209);
    text-align: $align;
    text-decoration: $decoration;
 
-}        
+}
+
+@mixin mobile{
+    @media (min-width: 320px) and (max-width: 430px) {
+        @content;
+}}
