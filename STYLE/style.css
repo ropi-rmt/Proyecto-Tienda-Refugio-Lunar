@@ -61,45 +61,6 @@ header nav :hover {
   color: rgb(155, 98, 209);
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-  /*PRODUCTOS*/
-  .galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .producto {
-    width: 50vw;
-  }
-  .imgprod {
-    width: 50vw;
-  }
-  /*NOSOTROS*/
-  .nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .img1 {
-    width: 80vw;
-    padding: 10px;
-  }
-  .img2 {
-    height: 35vh;
-    padding: 10px;
-  }
-  /*CONTACTO*/
-  .contacto {
-    display: flex;
-    flex-flow: column;
-    row-gap: 10px;
-  }
-  .ifihad {
-    width: 75vw;
-  }
-}
 #videobienvenida {
   display: flex;
   justify-content: center;
@@ -191,6 +152,20 @@ h4 {
   font-weight: 300;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  /*PRODUCTOS*/
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 50vw;
+  }
+  .imgprod {
+    width: 50vw;
+  }
+}
 .nosotros {
   display: grid;
   grid-template-areas: "text1 img1" "img2 text2";
@@ -212,6 +187,24 @@ h4 {
   height: 35vh;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  /*NOSOTROS*/
+  .nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img1 {
+    width: 80vw;
+    padding-top: 10px;
+  }
+  .img2 {
+    height: 35vh;
+    padding: 10px;
+  }
+}
 .contacto {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -246,6 +239,17 @@ label {
   width: 25vw;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  /*CONTACTO*/
+  .contacto {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+  }
+  .ifihad {
+    width: 75vw;
+  }
+}
 footer h2 {
   font-family: "Borel", cursive;
   font-optical-sizing: auto;

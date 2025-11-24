@@ -10,6 +10,8 @@
 
 }
 
+     
+
 .logocontacto {
     height: 15vw;
 }
@@ -31,4 +33,21 @@ label {
 
 .ifihad {
     width: 25vw;
+}
+
+
+     @include v.mobile {
+  
+    /*CONTACTO*/
+
+    .contacto {
+        display: flex;
+        flex-flow: column;
+        row-gap: 10px;
+
+    }
+
+    .ifihad {
+        width: 75vw;
+    }
 }
