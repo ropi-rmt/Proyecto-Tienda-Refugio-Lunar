@@ -1,0 +1,13 @@
+/*archivo principal de SASS*/
+
+@use "variables";
+@use "header";
+@use "home";
+@use "productos";
+@use "blog";
+@use "nosotros";
+@use "contacto";
+@use "detalleproducto";
+@use "footer;"
+
+/*luego ejecutar en terminal sass --watch sass/style.scss style/style.css estoy es 1h 29'*/
