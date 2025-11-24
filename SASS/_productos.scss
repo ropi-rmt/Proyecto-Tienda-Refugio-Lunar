@@ -1,0 +1,70 @@
+@use "variables" as v;
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    text-decoration: none;
+
+    p {
+        color: v.$colorContraste;
+        font-family: v.$fuenteSecundaria;
+        font-optical-sizing: auto;
+        text-align: center;
+        text-decoration: none;
+
+    }
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: v.$colorRefugio;
+    padding-bottom: 20px;
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.imgprod {
+    width: 25vw;
+}
+
+.boton {
+    color: v.$fuentePrimariaColor;
+    font-family: v.$fuenteSecundaria;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+:hover {
+    background-color: v.$fuentePrimariaColor;
+    opacity: 25%;
+}}
+
+
+
+.linkaproducto {
+   @include v.hs(v.$fuenteSecundaria, auto, v.$colorContraste, center, none)
+}
+
+h2 {
+    @include v.hs(v.$fuenteSecundaria, auto, v.$colorContraste, center, none )
+}
+
+h3 {
+     @include v.hs(v.$fuenteSecundaria, auto, v.$colorContraste, center, none )
+}
+
+h4 {
+     @include v.hs(v.$fuenteSecundaria, auto, v.$colorContraste, center, none );
+    font-weight: 300;
+
+}

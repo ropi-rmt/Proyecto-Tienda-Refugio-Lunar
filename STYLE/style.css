@@ -1,323 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
-
-
+/*archivo principal de SASS*/
+/*arranca a 1h 18'*/
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap");
 * {
-    margin: 5;
-    padding: 0;
-
+  margin: 5;
+  padding: 0;
 }
 
-
-/* inicio header*/
-
-.borel-regular {
-    font-family: "Borel", cursive;
-    font-weight: 400;
-    font-style: normal;
+/*archivo principal de SASS*/
+/*aca va a ir el codigo css y sass del header y su repsonsive*/
+header .borel-regular {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+header h1 {
+  font-family: "Borel", cursive;
+  font-optical-sizing: auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: rgb(178, 142, 211);
+}
+header .logorefugio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h2 {
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #333333;
+  list-style-type: none;
+  padding-top: 10px;
+  gap: 15px;
+}
+header nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header nav ul li a {
+  font-family: "Borel", cursive;
+  font-optical-sizing: auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 100vw;
+  font-size: 16px;
+  list-style-type: none;
+}
+header nav :hover {
+  color: rgb(155, 98, 209);
 }
 
-.borel-regular {
-    font-family: "Borel", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1 {
-    color: white;
-    font-family: "borel", cursive;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-    background-color: rgb(178, 142, 211);
-}
-
-.logorefugio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*width:100px;
-    height:100px;*/
+/*archivo principal de SASS*/
+#videobienvenida {
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    color: #333333;
-    text-align: center;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
 }
 
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #333333;
-    list-style-type: none;
-    padding-top: 10px;
-    gap: 15px;
-
-
-}
-
-header nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav ul li a {
-    width: 100vw;
-    color: white;
-    font-family: "Borel", cursive;
-    font-size: 16px;
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-header nav ul li a:hover {
-    color: rgb(155, 98, 209);
-}
-
-
-/*fin header*/
-
-/*inicio main*/
-
-/*HOME*/
-
-#videobienvenida {
-    display: flex;
-    justify-content: center;
-}
-
-/*PRODUCTOS*/
-
+/*archivo principal de SASS*/
 .galeria {
-    display: flex;
-    gap: 15px;
-    justify-content: space-around;
-    text-decoration: none;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.galeria p {
+  color: #333333;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  text-decoration: none;
 }
 
 .producto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: rgb(178, 142, 211);
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(155, 98, 209);
+  padding-bottom: 20px;
 }
-
-
 .producto a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .imgprod {
-    width: 25vw;
+  width: 25vw;
 }
 
-.boton{
-   color: white;
-    font-family: "outfit", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    background-color: blueviolet; 
-    padding: 10px;
+.boton {
+  color: white;
+  font-family: "outfit", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: blueviolet;
+  padding: 10px;
+}
+.boton :hover {
+  background-color: white;
+  opacity: 25%;
 }
 
-.boton:hover{
-    background-color: white;
-    opacity: 25%;
-}
 .linkaproducto {
-    color: #333333;
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    text-align: center;
-    text-decoration: none;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
 }
 
-.galeria p {
-    color: #333333;
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    text-align: center;
-    text-decoration: none;
-
+h2 {
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
 }
 
 h3 {
-    color: #333333;
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    text-align: center;
-    text-decoration: none;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
 }
 
 h4 {
-    color: #333333;
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
 }
 
-/*NOSOTROS*/
-
-.nosotros{
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;*/
-
-    display: grid;
-   
-    grid-template-areas: 
-    "text1 img1"
-    "img2 text2";
-    
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-        
+/*archivo principal de SASS*/
+.nosotros {
+  display: grid;
+  grid-template-areas: "text1 img1" "img2 text2";
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
-.section{
-    display: grid;
-    grid-template-columns: auto;
+.section {
+  display: grid;
+  grid-template-columns: auto;
 }
 
-.img1{
-    height: 35vh;
+.img1 {
+  height: 35vh;
 }
 
-.img2{
-    height: 35vh;
-     
+.img2 {
+  height: 35vh;
 }
 
-
-/*CONTACTO*/
-
+/*archivo principal de SASS*/
 .contacto {
-
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;*/
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 10px;
-    align-items: center;
-    padding: 10px;
-
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  padding: 10px;
 }
 
 .logocontacto {
-    height: 15vw;
+  height: 15vw;
 }
 
 .form {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    width: 50vw;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
 }
 
 label {
-    color: #333333;
-    font-family: "outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    text-align: left;
-    text-decoration: none;
+  font-family: "outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: #333333;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .ifihad {
-    width: 25vw;
+  width: 25vw;
 }
 
-/*fin main*/
-
-/*inicio footer*/
-
+/*archivo principal de SASS*/
 footer h2 {
-    color: white;
-    font-family: "borel", cursive;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-    background-color: rgb(178, 142, 211);
+  font-family: "Borel", cursive;
+  font-optical-sizing: auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: rgb(155, 98, 209);
 }
-
 footer ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+footer .rs {
+  width: 5vw;
 }
 
-.rs {
-    width: 5vw;
-}
+/*luego ejecutar en terminal sass --watch sass/style.scss style/style.css estoy es 1h 29'*/
 
-@media (min-width: 320px) and (max-width: 430px) {
-
-    /*PRODUCTOS*/
-
-    .galeria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .producto {
-        width: 50vw;
-    }
-
-    .imgprod {
-        width: 50vw;
-    }
-
-        /*NOSOTROS*/
-    
-    .nosotros{
-        display: flex;
-        flex-wrap: wrap;
-       flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .img1{
-    width: 80vw;
-        padding: 10px;
-}
-.img2{
-    height: 35vh;
-    padding: 10px;
-}
-    
-    /*CONTACTO*/
-
-    .contacto {
-        display: flex;
-        flex-flow: column;
-        row-gap: 10px;
-
-    }
-
-    .ifihad {
-        width: 75vw;
-    }
-}
+/*# sourceMappingURL=style.css.map */

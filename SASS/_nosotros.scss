@@ -1,0 +1,28 @@
+@use "variables" as v;
+
+.nosotros{
+    display: grid;
+   
+    grid-template-areas: 
+    "text1 img1"
+    "img2 text2";
+    
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+        
+}
+
+.section{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.img1{
+    height: 35vh;
+}
+
+.img2{
+    height: 35vh;
+     
+}

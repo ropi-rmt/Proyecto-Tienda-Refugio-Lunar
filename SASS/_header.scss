@@ -1,1 +1,58 @@
 /*aca va a ir el codigo css y sass del header y su repsonsive*/
+
+@use "variables" as v;
+
+header{
+
+     .borel-regular {
+    font-family: v.$fuentePrimaria;
+    font-weight: 400;
+    font-style: normal;
+}
+    h1 {
+         @include v.hs(v.$fuentePrimaria, auto, v.$fuentePrimariaColor, center, none );
+    font-size: 20px;
+    padding-top: 10px;
+    background-color: rgb(178, 142, 211);
+}
+
+ .logorefugio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    @include v.hs(v.$fuenteSecundaria, auto, v.$colorContraste, center, none )
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: v.$colorContraste;
+    list-style-type: none;
+    padding-top: 10px;
+    gap: 15px;
+
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    ul li a {
+         @include v.hs(v.$fuentePrimaria, auto, v.$fuentePrimariaColor, center, none );
+    width: 100vw;
+    font-size: 16px;
+    list-style-type: none;
+    
+}:hover {
+    color: v.$colorRefugio;
+}
+}
+    }
+
+      

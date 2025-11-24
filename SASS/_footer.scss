@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+footer {
+    
+    h2 {
+                 @include v.hs(v.$fuentePrimaria, auto, v.$fuentePrimariaColor, center, none );
+    font-size: 20px;
+    padding-top: 10px;
+    background-color: v.$colorRefugio;}
+
+    ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.rs {
+    width: 5vw;
+}}
+
+

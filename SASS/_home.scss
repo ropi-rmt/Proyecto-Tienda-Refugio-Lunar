@@ -1,0 +1,13 @@
+@use "variables" as v;
+
+#videobienvenida {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: v.$fuenteSecundaria;
+    font-optical-sizing: auto;
+    color: v.$colorContraste;
+    text-align: center;
+}

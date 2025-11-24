@@ -3,9 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
 
-$fuentePrimaria: Borel;
+$fuentePrimaria: "Borel", cursive;
 $fuentePrimariaColor: white;
-$fuenteSecundaria: Outfit;
+$fuenteSecundaria: "outfit", sans-serif;
 $colorContraste:  #333333;
 $colorRefugio: rgb(155, 98, 209);
-            
+
+* {
+    margin: 5;
+    padding: 0;
+}
+
+
+@mixin hs($font, $sizing, $color, $align, $decoration){
+   font-family: $font;
+   font-optical-sizing: $sizing;
+   color: $color;
+   text-align: $align;
+   text-decoration: $decoration;
+
+}        
