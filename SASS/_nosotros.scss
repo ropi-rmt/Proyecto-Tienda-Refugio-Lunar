@@ -1,53 +1,53 @@
 @use "variables" as v;
 
-.nosotros{
+.nosotros {
     display: grid;
-   
-    grid-template-areas: 
-    "text1 img1"
-    "img2 text2";
-    
+
+    grid-template-areas:
+        "text1 img1"
+        "img2 text2";
+
     align-items: center;
     justify-content: center;
     justify-items: center;
-        
+
 }
 
-.section{
+.section {
     display: grid;
     grid-template-columns: auto;
 }
 
-.img1{
+.img1 {
     height: 35vh;
 }
 
-.img2{
+.img2 {
     height: 35vh;
-     
+
 }
 
 
-     @include v.mobile {
+@include v.mobile {
 
-        /*NOSOTROS*/
-    
-    .nosotros{
+    /*NOSOTROS*/
+
+    .nosotros {
         display: flex;
         flex-wrap: wrap;
-       flex-direction: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .img1{
-    width: 80vw;
+    .img1 {
+        width: 80vw;
         padding-top: 10px;
-}
-.img2{
-    height: 35vh;
-    padding: 10px;
-}
-    
-}
+    }
 
+    .img2 {
+        height: 35vh;
+        padding: 10px;
+    }
+
+}
